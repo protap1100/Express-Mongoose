@@ -16,7 +16,7 @@ export default [
       'prefer-const': 'error',
       'no-console': 'warn',
       'no-undef': 'error',
-      'prettier/prettier': 'error',
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
     },
     ignores: ['**/node_modules/**', '**/dist/**'],
   },
