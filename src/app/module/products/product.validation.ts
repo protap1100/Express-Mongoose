@@ -18,12 +18,12 @@ export const productValidationSchema = z.object({
     invalid_type_error: 'Name must be a string',
   }),
   description: z.string({
-    required_error: 'Description is required',
+    required_error: 'Description is required ',
     invalid_type_error: 'Description must be a string',
   }),
-  price: z.number().min(-1, 'Student price is required'),
-  category: z.string().min(1, 'Student category is required'),
-  tags: z.array(z.string().min(1, 'Student tags is required')),
+  price: z.number().min(-1, 'Product price is required'),
+  category: z.string().min(1, 'Product category is required'),
+  tags: z.array(z.string().min(1, 'Product tags is required')),
   variants: VariantsValidation,
   inventory: InventoryValidation,
 });
